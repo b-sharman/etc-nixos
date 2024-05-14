@@ -50,6 +50,7 @@
     xkb.variant = "3l";
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
+    excludePackages = [ pkgs.xterm ];
   };
 
   # TODO: doesn't quite work in console
@@ -81,6 +82,29 @@
     vim
     wl-clipboard
   ];
+
+  environment.gnome.excludePackages = (with pkgs; [
+    gnome-connections
+    gnome-photos
+    gnome-tour
+  ]) ++ (with pkgs.gnome; [
+    cheese
+    epiphany
+    geary
+    gnome-calendar
+    gnome-characters
+    gnome-contacts
+    gnome-disk-utility
+    gnome-font-viewer
+    gnome-logs
+    gnome-maps
+    gnome-music
+    gnome-weather
+    seahorse
+    simple-scan
+    totem
+    yelp
+  ]);
 
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
