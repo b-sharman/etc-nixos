@@ -62,6 +62,7 @@
     description = "Byron";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
+      discord
       neovim
       zsh
     ];
@@ -78,6 +79,7 @@
     google-chrome
     neofetch
     vim
+    wl-clipboard
   ];
 
   programs.zsh.enable = true;
