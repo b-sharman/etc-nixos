@@ -79,10 +79,13 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    fd
     file
+    fzf
     git
     google-chrome
     neofetch
+    python3
     vim
     wl-clipboard
   ];
