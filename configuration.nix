@@ -125,6 +125,15 @@
 
   # List services that you want to enable:
 
+  hardware.pulseaudio.enable = false;
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    audio.enable = true;
+    jack.enable = true;
+    pulse.enable = true;
+  };
+
   # Enable the OpenSSH daemon.
   # services.openssh.enable = true;
 
