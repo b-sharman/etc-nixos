@@ -15,6 +15,15 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  # Microcode updates
+  hardware.cpu.amd.updateMicrocode = true;
+
+  # Try to fix cold reboots
+  # https://www.reddit.com/r/archlinux/comments/vz5apu/a_solution_to_mce_hardware_error_reboots_on_amd/
+  boot.kernelParams = [
+    "processor.max_cstate=5"
+  ];
+
   networking.hostName = "shadowfax"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
