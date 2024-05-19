@@ -45,9 +45,10 @@
   # Configure keymap in X11
   services.xserver = {
     enable = true;
-    layout = "us";
-    # xkbVariant = "3l";
-    xkb.variant = "3l";
+    xkb = {
+      layout = "us";
+      variant = "3l";
+    };
     displayManager.gdm.enable = true;
     desktopManager.gnome.enable = true;
     excludePackages = [ pkgs.xterm ];
