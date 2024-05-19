@@ -74,6 +74,7 @@
     description = "Byron";
     extraGroups = [ "networkmanager" "wheel" ];
     packages = with pkgs; [
+      darktable
       discord
       neovim
       ripgrep
