@@ -66,7 +66,8 @@
       discord
       neovim
       ripgrep
-      # zsh
+      yt-dlp
+      zsh
     ];
   };
 
@@ -88,6 +89,7 @@
     gnome-connections
     gnome-photos
     gnome-tour
+    snapshot
   ]) ++ (with pkgs.gnome; [
     cheese
     epiphany
