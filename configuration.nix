@@ -52,6 +52,8 @@
     LC_TIME = "en_US.UTF-8";
   };
 
+  virtualisation.docker.enable = true;
+
   # Configure keymap in X11
   services.xserver = {
     enable = true;
@@ -72,7 +74,7 @@
   users.users.byron = {
     isNormalUser = true;
     description = "Byron";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "docker" "networkmanager" "wheel" ];
     packages = with pkgs; [
       darktable
       discord
