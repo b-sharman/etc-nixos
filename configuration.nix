@@ -167,6 +167,21 @@
     audio.enable = true;
     jack.enable = true;
     pulse.enable = true;
+
+    extraConfig.pipewire.microphone = {
+      "context.objects" = [
+        {
+          factory = "adapter";
+          args = {
+            "factory.name" = "api.alsa.pcm.source";
+            "node.name" = "microphone";
+            "node.description" = "microphone whee woohoo";
+            "media.class" = "Audio/Source";
+            "api.alsa.path" = "hw:2,0";
+          };
+        }
+      ];
+    };
   };
 
   # Enable the OpenSSH daemon.
