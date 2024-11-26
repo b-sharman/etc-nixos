@@ -118,6 +118,7 @@
     minikube
     nodejs_22
     papers
+    ptyxis
     python3
     texlive.combined.scheme-medium
     unzip
