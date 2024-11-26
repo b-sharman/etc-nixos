@@ -78,6 +78,7 @@
     packages = with pkgs; [
       darktable
       discord
+      harper
       neovim
       ripgrep
       yt-dlp
