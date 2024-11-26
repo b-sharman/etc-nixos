@@ -114,10 +114,12 @@
 
     minikube
     nodejs_22
+    papers
     python3
     texlive.combined.scheme-medium
     vim
     wl-clipboard
+    zip
   ];
 
   environment.gnome.excludePackages = (with pkgs; [
