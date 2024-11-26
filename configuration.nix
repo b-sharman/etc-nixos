@@ -78,6 +78,7 @@
     packages = with pkgs; [
       darktable
       discord
+      gopls
       harper
       neovim
       ripgrep
@@ -94,6 +95,7 @@
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
+    dconf-editor
     fd
     file
     fzf
