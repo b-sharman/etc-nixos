@@ -118,6 +118,7 @@
     papers
     python3
     texlive.combined.scheme-medium
+    unzip
     vim
     wl-clipboard
     zip
