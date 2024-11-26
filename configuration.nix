@@ -81,6 +81,8 @@
       harper
       neovim
       ripgrep
+      ruff
+      uv
       yt-dlp
       zsh
     ];
