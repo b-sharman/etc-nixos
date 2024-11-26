@@ -124,25 +124,24 @@
   ];
 
   environment.gnome.excludePackages = (with pkgs; [
-    gnome-connections
-    gnome-photos
-    gnome-tour
-    snapshot
-  ]) ++ (with pkgs.gnome; [
     cheese
     epiphany
     geary
     gnome-calendar
     gnome-characters
+    gnome-connections
     gnome-contacts
     gnome-disk-utility
     gnome-font-viewer
     gnome-logs
     gnome-maps
     gnome-music
+    gnome-photos
+    gnome-tour
     gnome-weather
     seahorse
     simple-scan
+    snapshot
     totem
     yelp
   ]);
