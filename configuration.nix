@@ -156,6 +156,8 @@
   # get zsh completion for system packages
   environment.pathsToLink = [ "/share/zsh" ];
 
+  programs.steam.enable = true;
+
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
 
