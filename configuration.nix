@@ -78,6 +78,7 @@
     packages = with pkgs; [
       darktable
       discord
+      go
       gopls
       harper
       neovim
