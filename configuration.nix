@@ -123,7 +123,9 @@
     papers
     ptyxis
     python3
-    texlive.combined.scheme-medium
+    (texlive.combine {
+      inherit (texlive) scheme-medium datetime2 enumitem titlesec;
+    })
     unzip
     vim
     wl-clipboard
