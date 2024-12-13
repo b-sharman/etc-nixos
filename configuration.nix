@@ -77,13 +77,18 @@
     extraGroups = [ "docker" "networkmanager" "wheel" ];
     packages = with pkgs; [
       darktable
+      delve
       discord
+      droidcam
+      gnome-sound-recorder
       go
       gopls
       harper
       neovim
+      obs-studio
       ripgrep
       ruff
+      svelte-language-server
       uv
       yt-dlp
       zsh
@@ -158,6 +163,7 @@
   # get zsh completion for system packages
   environment.pathsToLink = [ "/share/zsh" ];
 
+  programs.obs-studio.plugins = [ "droidcam-obs" ];
   programs.steam.enable = true;
 
   programs.zsh.enable = true;
