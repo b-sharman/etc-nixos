@@ -104,6 +104,7 @@
     dconf-editor
     fd
     file
+    firefox
     fzf
     gimp
     git
