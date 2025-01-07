@@ -129,7 +129,7 @@
     ptyxis
     python3
     (texlive.combine {
-      inherit (texlive) scheme-medium datetime2 enumitem titlesec;
+      inherit (texlive) scheme-medium datetime2 datetime2-english enumitem titlesec;
     })
     unzip
     vim
